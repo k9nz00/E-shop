@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (session_start()){
+    echo 'hi!';
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru">

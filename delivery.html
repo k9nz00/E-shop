@@ -1,6 +1,45 @@
-<?php
-require_once __DIR__.'/includeFiles/template/header.php';
-?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Доставка</title>
+
+  <meta name="description" content="Fashion - интернет-магазин">
+  <meta name="keywords" content="Fashion, интернет-магазин, одежда, аксессуары">
+
+  <meta name="theme-color" content="#393939">
+
+  <link rel="preload" href="assets/fonts/opensans-400-normal.woff2" as="font">
+  <link rel="preload" href="assets/fonts/roboto-400-normal.woff2" as="font">
+  <link rel="preload" href="assets/fonts/roboto-700-normal.woff2" as="font">
+
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <script src="assets/js/scripts.js" defer=""></script>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="#">
+    <img src="assets/img/logo.svg" alt="Fashion">
+  </a>
+  <nav class="page-header__menu">
+    <ul class="main-menu main-menu--header">
+      <li>
+        <a class="main-menu__item" href="#">Главная</a>
+      </li>
+      <li>
+        <a class="main-menu__item" href="#">Новинки</a>
+      </li>
+      <li>
+        <a class="main-menu__item" href="index.php">Sale</a>
+      </li>
+      <li>
+        <a class="main-menu__item active">Доставка</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 <main class="page-delivery">
   <h1 class="h h--1">Доставка</h1>
   <p class="page-delivery__desc">
@@ -41,6 +80,31 @@ require_once __DIR__.'/includeFiles/template/header.php';
     <a class="page-delivery__button button" href="index.php">Продолжить покупки</a>
   </section>
 </main>
-<?php
-require_once __DIR__.'/includeFiles/template/footer.php';
-?>
+<footer class="page-footer">
+  <div class="container">
+    <a class="page-footer__logo" href="#">
+      <img src="assets/img/logo--footer.svg" alt="Fashion">
+    </a>
+    <nav class="page-footer__menu">
+      <ul class="main-menu main-menu--footer">
+        <li>
+          <a class="main-menu__item" href="#">Главная</a>
+        </li>
+        <li>
+          <a class="main-menu__item" href="#">Новинки</a>
+        </li>
+        <li>
+          <a class="main-menu__item" href="index.php">Sale</a>
+        </li>
+        <li>
+          <a class="main-menu__item">Доставка</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="page-footer__copyright">
+      © Все права защищены
+    </address>
+  </div>
+</footer>
+</body>
+</html>

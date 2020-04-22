@@ -1,5 +1,4 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includeFiles/template/header.php'?>
-
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/header.php' ?>
 <main class="shop-page">
     <header class="intro">
         <div class="intro__wrapper">
@@ -73,63 +72,63 @@
             <section class="shop__list">
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-1.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-1.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-2.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-2.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-3.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-3.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-4.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-4.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-5.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-5.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-6.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-6.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-7.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-7.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-8.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-8.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
                 </article>
                 <article class="shop__item product" tabindex="0">
                     <div class="product__image">
-                        <img src="assets/img/products/product-9.jpg" alt="product-name">
+                        <img src="app/assets/img/products/product-9.jpg" alt="product-name">
                     </div>
                     <p class="product__name">Платье со складками</p>
                     <span class="product__price">2 999 руб.</span>
@@ -257,4 +256,4 @@
         </div>
     </section>
 </main>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includeFiles/template/footer.php'?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/footer.php' ?>

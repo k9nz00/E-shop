@@ -1,3 +1,4 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/bootstrap.php' ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>

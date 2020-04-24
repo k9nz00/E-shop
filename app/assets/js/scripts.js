@@ -277,16 +277,40 @@ if (addList) {
   });
 
   const button = document.querySelector('.button');
-  const popupEnd = document.querySelector('.page-add__popup-end');
+    const popupEnd = document.querySelector('.page-add__popup-end');
 
-  button.addEventListener('click', (evt) => {
+    button.addEventListener('click', (evt) => {
+        evt.preventDefault();
 
-    evt.preventDefault();
+        let dataFromForm = new FormData(document.getElementById('add-product'));
+        let data = {};
+        for (let [key, value] of dataFromForm.entries()) {
+            data[key] = value
+        }
 
-    form.hidden = true;
-    popupEnd.hidden = false;
+        // let dataJson = JSON.stringify(data)
 
-  })
+        console.log(data)
+//дич какая-то
+        $.ajax({
+            type: "POST",
+            url: "/app/system/addProduct.php",
+            // dataType: 'json',
+            // processData: false,
+          contentType: false,
+            data: data,
+            success: function (response) {
+                alert(111);
+            },
+            error: function (error) {
+                alert(222)
+            }
+        });
+
+        form.hidden = true;
+        popupEnd.hidden = false;
+
+    })
 
 }
 

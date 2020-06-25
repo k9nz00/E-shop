@@ -1,4 +1,3 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/header.php' ?>
 <main class="page-authorization">
     <h1 class="h h--1">Авторизация</h1>
     <form class="custom-form" action="#" method="post">
@@ -7,4 +6,3 @@
         <button class="button" type="submit">Войти в личный кабинет</button>
     </form>
 </main>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/footer.php' ?>

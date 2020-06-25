@@ -4,12 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Fashion</title>
-
     <meta name="description" content="Fashion - интернет-магазин">
     <meta name="keywords" content="Fashion, интернет-магазин, одежда, аксессуары">
-
     <meta name="theme-color" content="#393939">
-
     <link rel="preload" href="/app/assets/img/intro/coats-2018.jpg" as="image">
     <link rel="preload" href="/app/assets/fonts/opensans-400-normal.woff2" as="font">
     <link rel="preload" href="/app/assets/fonts/roboto-400-normal.woff2" as="font">

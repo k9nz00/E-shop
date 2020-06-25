@@ -1,4 +1,3 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/header.php' ?>
 <main class="page-add">
     <h1 class="h h--1">Добавление товара</h1>
     <form class="custom-form" action="/app/system/addProduct.php" method="post" id="add-product">
@@ -50,4 +49,3 @@
         </div>
     </section>
 </main>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/footer.php' ?>

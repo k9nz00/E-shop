@@ -282,23 +282,34 @@ if (addList) {
     button.addEventListener('click', (evt) => {
         evt.preventDefault();
 
-        let dataFromForm = new FormData(document.getElementById('add-product'));
-        let data = {};
-        for (let [key, value] of dataFromForm.entries()) {
-            data[key] = value
+      let name = $('#product-name').val();
+      let price = $('#product-price').val();
+      let categories = $('.custom-form__select option:selected');
+      let catId = '';
+      for (let i = 0; i < categories.length; i++) {
+        if (i === 0) {
+          catId = categories[i].value;
+        } else {
+          catId += ',' + categories[i].value;
         }
+      }
+      let isNew = '';
+      if ($('#new').prop('checked')) {
+        isNew = '&new=on';
+      }
+      let isSale = '';
+      if ($('#sale').prop('checked')) {
+        isSale = '&sale=on';
+      }
 
-        // let dataJson = JSON.stringify(data)
+      let imageId = $(evt.target).data('image-id');
+      imageId = imageId === undefined ? '' : '&image=' + imageId;
+      let params = 'name=' + name + '&price=' + price + '&categories=' + catId + isNew + isSale + imageId;
 
-        console.log(data)
-//дич какая-то
         $.ajax({
             type: "POST",
             url: "/app/system/addProduct.php",
-            // dataType: 'json',
-            // processData: false,
-          contentType: false,
-            data: data,
+            data: params,
             success: function (response) {
                 alert(111);
             },

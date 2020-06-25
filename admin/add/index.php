@@ -1,7 +1,7 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/app/layouts/basicTemplate/header.php' ?>
 <main class="page-add">
     <h1 class="h h--1">Добавление товара</h1>
-    <form class="custom-form" action="" method="post" id="add-product">
+    <form class="custom-form" action="/app/system/addProduct.php" method="post" id="add-product">
         <fieldset class="page-add__group custom-form__group">
             <legend class="page-add__small-title custom-form__title">Данные о товаре</legend>
             <label for="product-name" class="custom-form__input-wrapper page-add__first-wrapper">
